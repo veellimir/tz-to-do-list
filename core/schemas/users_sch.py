@@ -1,9 +1,9 @@
 from pydantic import BaseModel
 
 
-class UserBase(BaseModel):
+class UserBaseSchem(BaseModel):
     username: str
 
 
-class UserCreate(UserBase):
+class UserCreateSchem(UserBaseSchem):
     password: str
