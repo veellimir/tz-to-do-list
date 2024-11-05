@@ -14,6 +14,7 @@ from settings.database.database import DATABASE_URL
 from settings.database.base import Base
 
 from core.models.users import User
+from core.models.tasks_users import Task
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
