@@ -1,17 +1,17 @@
 from pydantic import BaseModel
 
 
-class TaskBase(BaseModel):
+class TaskBaseSchem(BaseModel):
     title: str
     description: str
     status: str
 
 
-class TaskCreate(TaskBase):
+class TaskCreateSchem(TaskBaseSchem):
     pass
 
 
-class Task(TaskBase):
+class TaskSchem(TaskBaseSchem):
     id: int
     user_id: int
 

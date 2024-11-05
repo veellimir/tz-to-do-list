@@ -1,11 +1,11 @@
 from sqlalchemy import Column, Integer, String
 
 from settings.database.base import Base
+from core.models.mixins_models import IdIntPkMixin
 
 
-class User(Base):
+class User(IdIntPkMixin, Base):
     __tablename__ = "users"
 
-    id = Column(Integer, primary_key=True, index=True)
     username = Column(String, unique=True, index=True)
     password_hash = Column(String)
