@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, String
 
 from settings.database.base import Base
 from core.models.mixins_models import IdIntPkMixin

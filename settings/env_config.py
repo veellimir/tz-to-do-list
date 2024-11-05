@@ -4,3 +4,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 CONFIG__DATABASE_URL = os.getenv("DATABASE_URL")
+
+CONFIG__SECRET_KEY = os.getenv("CONFIG__SECRET_KEY")
+CONFIG__ALGORITHM = os.getenv("CONFIG__ALGORITHM")
+ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", 30))
+REFRESH_TOKEN_EXPIRE_DAYS = int(os.getenv("REFRESH_TOKEN_EXPIRE_DAYS", 7))
